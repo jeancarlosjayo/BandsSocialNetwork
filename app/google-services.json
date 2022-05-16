@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "798832273356",
+    "project_id": "bandssocialnetwork",
+    "storage_bucket": "bandssocialnetwork.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798832273356:android:72200320e9869955fc9f69",
+        "android_client_info": {
+          "package_name": "com.jramdev.bandssocialnetwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798832273356-3m9k3nj6l0oe74aaaorj4iv836ia9jep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIxkYOKjECiECjCMaLRn4Qepj5ArMwHSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798832273356-3m9k3nj6l0oe74aaaorj4iv836ia9jep.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
