@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     tools:context=".LoginActivity">
 
@@ -35,15 +36,15 @@
         android:drawableEnd="@drawable/ic_baseline_account_circle_24"
         android:drawableTint="#4D000000"
         android:hint="Usuario"
-        android:maxLines="1"
         android:inputType="textEmailAddress"
+        android:maxLines="1"
         android:paddingStart="30dp"
-        android:paddingEnd="30dp"
+        android:paddingEnd="13dp"
         android:textColorHint="#757575" />
 
 
-    <EditText
-        android:id="@+id/passwordEditText"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_toggle"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_below="@id/userEditText"
@@ -52,21 +53,28 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
-        android:background="@drawable/ic_strokeorange"
-        android:drawableEnd="@drawable/ic_baseline_visibility_24"
-        android:drawableTint="#4D000000"
-        android:hint="Contraseña"
-        android:maxLines="1"
-        android:inputType="textPassword"
-        android:paddingStart="30dp"
-        android:paddingEnd="30dp"
-        android:textColorHint="#757575" />
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_strokeorange"
+            android:drawableTint="#4D000000"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:textColorHint="#757575" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <ImageButton
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/passwordEditText"
+        android:layout_below="@id/password_toggle"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
         android:background="@drawable/ic_buttonbackground"

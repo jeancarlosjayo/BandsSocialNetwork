@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/drawable/ic_strokeorange.xml" value="0.149" />
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_login.xml" value="0.14" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/drawable/shapetoast.xml" value="0.2075" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_main.xml" value="0.1859375" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/layout/custom_toast.xml" value="0.16417272338606242" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/layout/login.xml" value="0.1" />
       </map>
     </option>
