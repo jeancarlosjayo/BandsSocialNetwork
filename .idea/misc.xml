@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/NB/StudioProjects/BandsSocialNetwork/app/src/main/res/drawable/ic_7dias.xml" value="0.1535" />
+        <entry key="..\:/Users/NB/StudioProjects/BandsSocialNetwork/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.1535" />
+        <entry key="..\:/Users/NB/StudioProjects/BandsSocialNetwork/app/src/main/res/drawable/ic_buttonbackground.xml" value="0.1535" />
+        <entry key="..\:/Users/NB/StudioProjects/BandsSocialNetwork/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1535" />
+        <entry key="..\:/Users/NB/StudioProjects/BandsSocialNetwork/app/src/main/res/drawable/ic_launcher_buttons.xml" value="0.1535" />
+        <entry key="..\:/Users/NB/StudioProjects/BandsSocialNetwork/app/src/main/res/drawable/shapetoast.xml" value="0.1535" />
+        <entry key="..\:/Users/NB/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_eleccionusuario.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/NB/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/NB/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_tablero.xml" value="0.25" />
+        <entry key="..\:/Users/NB/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_tablerosuscripcion.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/drawable/ic_strokeorange.xml" value="0.149" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/drawable/shapetoast.xml" value="0.2075" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_login.xml" value="0.33" />

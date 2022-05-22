@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center_horizontal"
+        android:minWidth="200dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/paso1" />
+
+    <ImageView
+        android:id="@+id/banda"
+        android:layout_width="271dp"
+        android:layout_height="198dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="194dp"
+        android:gravity="center_horizontal"
+        android:minWidth="200dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/banda" />
+
+    <ImageView
+        android:id="@+id/promotor"
+        android:layout_width="271dp"
+        android:layout_height="198dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="106dp"
+        android:gravity="center_horizontal"
+        android:minWidth="200dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/promotor" />
+
+    <ImageView
+        android:id="@+id/opcion3"
+        android:layout_width="271dp"
+        android:layout_height="198dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="7dp"
+        android:gravity="center_horizontal"
+        android:minWidth="200dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/cliente" />
+
+    <TextView
+        android:id="@+id/textViewOmitirPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginBottom="49dp"
+        android:elegantTextHeight="true"
+        android:text="*Este paso es obligatorio*"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+</RelativeLayout>

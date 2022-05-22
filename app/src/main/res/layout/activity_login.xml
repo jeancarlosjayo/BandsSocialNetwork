@@ -7,6 +7,7 @@
     android:gravity="center"
     tools:context=".LoginActivity">
 
+
     <ImageView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -20,7 +21,6 @@
         android:minWidth="200dp"
         android:scaleType="fitStart"
         android:src="@drawable/bienvenidoabandape" />
-
 
     <EditText
         android:id="@+id/userEditText"
