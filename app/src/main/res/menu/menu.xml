@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/idPublications"
+        android:icon="@drawable/mediaposts"
+        android:title="Publicaciones"></item>
+    <item
+        android:id="@+id/idSearch"
+        android:icon="@drawable/loupe"
+        android:title="Busqueda"></item>
+    <item
+        android:id="@+id/idChats"
+        android:icon="@drawable/speechbubble"
+        android:title="Chats"></item>
+    <item
+        android:id="@+id/idCalendar"
+        android:icon="@drawable/calendar"
+        android:title="Calendario"></item>
+    <item
+        android:id="@+id/idProfile"
+        android:icon="@drawable/user"
+        android:title="Perfil"></item>
+</menu>

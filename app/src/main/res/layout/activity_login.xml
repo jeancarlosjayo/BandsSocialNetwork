@@ -46,27 +46,32 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password_toggle"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/userEditText"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintEnabled="false"
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/ic_strokeorange"
             android:drawableTint="#4D000000"
             android:hint="Contraseña"
             android:inputType="textPassword"
             android:maxLines="1"
+            android:padding="10dp"
             android:paddingStart="30dp"
             android:paddingEnd="30dp"
-            android:textColorHint="#757575" />
+            android:textColorHint="#757575"
+            app:hintEnabled="false" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -114,6 +119,7 @@
             android:layout_marginTop="10dp"
             android:elegantTextHeight="true"
             android:text=" Registrate"
+            android:linksClickable="true"
             android:textAlignment="center"
             android:textColor="@color/ic_launcher_background"
             android:textSize="12sp"

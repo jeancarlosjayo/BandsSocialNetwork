@@ -14,6 +14,21 @@
         android:theme="@style/SinToolbar"
         tools:targetApi="31">
         <activity
+            android:name=".AddPublicationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterStep2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterStep1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".TableSubscriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSelectionActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true"
             android:theme="@style/SinToolbar">

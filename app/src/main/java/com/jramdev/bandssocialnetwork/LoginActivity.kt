@@ -26,6 +26,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var emailEdt: EditText
     private lateinit var passwordEdt: TextInputEditText
     private lateinit var layout1: View
+    private lateinit var registerLink: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -37,6 +38,7 @@ class LoginActivity : AppCompatActivity() {
         btnLogin = findViewById(R.id.btnLogin)
         emailEdt = findViewById(R.id.userEditText)
         passwordEdt = findViewById(R.id.passwordEditText)
+        registerLink = findViewById(R.id.textViewRegister)
         btnLogin.setOnClickListener {
             val password: String = passwordEdt.text.toString()
             val email: String = emailEdt.text.toString()
@@ -80,15 +82,20 @@ class LoginActivity : AppCompatActivity() {
 
 
         }
+        registerLink.setOnClickListener {
+            val intent = Intent(this, UserSelectionActivity::class.java)
+            startActivity(intent)
+
+        }
     }
 
-    public override fun onStart() {
-        super.onStart()
-        // Check if user is signed in (non-null) and update UI accordingly.
-        val currentUser = auth.currentUser
-        updateUI(currentUser)
+    //public override fun onStart() {
+    //  super.onStart()
+    // Check if user is signed in (non-null) and update UI accordingly.
+    //val currentUser = auth.currentUser
+    ///updateUI(currentUser)
 
-    }
+    //}
 
 
     private fun updateUI(currentUser: FirebaseUser?) {
@@ -98,7 +105,7 @@ class LoginActivity : AppCompatActivity() {
             customToastVisualizer(text)
             startActivity(intent)
         } else {
-            val text = "Autenticacion fallida"
+            val text = "Usuario y/o contraseña no válido"
             customToastVisualizer(text)
         }
     }

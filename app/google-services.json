@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "798832273356",
+    "firebase_url": "https://bandssocialnetwork-default-rtdb.firebaseio.com",
     "project_id": "bandssocialnetwork",
     "storage_bucket": "bandssocialnetwork.appspot.com"
   },
