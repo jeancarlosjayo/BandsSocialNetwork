@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Opciones">
+        <item>NO SELECCIONADO</item>
+        <item>ALIS</item>
+        <item>AMBAR</item>
+        <item>ANCÓN</item>
+        <item>ANDAJES</item>
+        <item>ANTIOQUIA</item>
+        <item>ARAHUAY</item>
+        <item>ASIA</item>
+        <item>ATAVILLOS ALTO</item>
+        <item>ATAVILLOS BAJO</item>
+        <item>ATE</item>
+        <item>AUCALLAMA</item>
+        <item>AYAUCA</item>
+        <item>AYAVIRI</item>
+        <item>AZANGARO</item>
+        <item>BARRANCA</item>
+        <item>BARRANCO</item>
+        <item>BREÑA</item>
+        <item>CACRA</item>
+        <item>CAJATAMBO</item>
+        <item>CALANGO</item>
+        <item>CALETA DE CARQUÍN</item>
+        <item>CALLAHUANCA</item>
+        <item>CANTA</item>
+        <item>CARABAYLLO</item>
+        <item>CARAMPOMA</item>
+        <item>CARANIA</item>
+        <item>CATAHUASI</item>
+        <item>CAUJUL</item>
+        <item>CERRO AZUL</item>
+        <item>CIENEGUILLA</item>
+        <item>COAYLLO</item>
+        <item>COCHAMARCA</item>
+        <item>COCHAS</item>
+        <item>COLONIA</item>
+        <item>COMAS</item>
+        <item>COPA</item>
+        <item>CUENCA</item>
+        <item>CHACLACAYO</item>
+        <item>CHANCAY</item>
+        <item>CHECRAS</item>
+        <item>CHICLA</item>
+        <item>CHILCA</item>
+        <item>CHILCA</item>
+        <item>CHOCOS</item>
+        <item>CHORRILLOS</item>
+        <item>EL AGUSTINO</item>
+        <item>GORGOR</item>
+        <item>HONGOS</item>
+        <item>HUACHO</item>
+        <item>HUACHUPAMPA</item>
+        <item>HUALMAY</item>
+        <item>HUAMANTANGA</item>
+        <item>HUAMPARA</item>
+        <item>HUANCAPON</item>
+        <item>HUANCAYA</item>
+        <item>HUANGASCAR</item>
+        <item>HUANTAN</item>
+        <item>HUANZA</item>
+        <item>HUAÑEC</item>
+        <item>HUARAL</item>
+        <item>HUAROCHIRÍ</item>
+        <item>HUAROS</item>
+        <item>HUAURA</item>
+        <item>IHUARI</item>
+        <item>IMPERIAL</item>
+        <item>INDEPENDENCIA</item>
+        <item>JESÚS MARÍA</item>
+        <item>LA MOLINA</item>
+        <item>LA VICTORIA</item>
+        <item>LACHAQUI</item>
+        <item>LAHUAYTAMBO</item>
+        <item>LAMPIAN</item>
+        <item>LANGA</item>
+        <item>LARAOS</item>
+        <item>LARAOS</item>
+        <item>LEONCIO PRADO</item>
+        <item>LIMA</item>
+        <item>LINCE</item>
+        <item>LINCHA</item>
+        <item>LOS OLIVOS</item>
+        <item>LUNAHUANÁ</item>
+        <item>LURIGANCHO-CHOSICA</item>
+        <item>LURÍN</item>
+        <item>MADEAN</item>
+        <item>MAGDALENA DEL MAR</item>
+        <item>MALA</item>
+        <item>MANAS</item>
+        <item>MARIATANA</item>
+        <item>MATUCANA</item>
+        <item>MIRAFLORES</item>
+        <item>NAVAN</item>
+        <item>NUEVO IMPERIAL</item>
+        <item>OMAS</item>
+        <item>OYON</item>
+        <item>PACARAN</item>
+        <item>PACARAOS</item>
+        <item>PACCHO</item>
+        <item>PACHACÁMAC</item>
+        <item>PACHANGARA</item>
+        <item>PARAMONGA</item>
+        <item>PATIVILCA</item>
+        <item>PUCUSANA</item>
+        <item>PUEBLO LIBRE</item>
+        <item>PUENTE PIEDRA</item>
+        <item>PUNTA HERMOSA</item>
+        <item>PUNTA NEGRA</item>
+        <item>PUTINZA</item>
+        <item>QUILMANÁ</item>
+        <item>QUINCHES</item>
+        <item>QUINOCAY</item>
+        <item>RICARDO PALMA</item>
+        <item>RÍMAC</item>
+        <item>SAN ANDRÉS DE TUPICOCHA</item>
+        <item>SAN ANTONIO</item>
+        <item>SAN ANTONIO</item>
+        <item>SAN BARTOLO</item>
+        <item>SAN BARTOLOMÉ</item>
+        <item>SAN BORJA</item>
+        <item>SAN BUENAVENTURA</item>
+        <item>SAN DAMIAN</item>
+        <item>SAN ISIDRO</item>
+        <item>SAN JOAQUIN</item>
+        <item>SAN JUAN DE IRIS</item>
+        <item>SAN JUAN DE LURIGANCHO</item>
+        <item>SAN JUAN DE MIRAFLORES</item>
+        <item>SAN JUAN DE TANTARANCHE</item>
+        <item>SAN LORENZO DE QUINTI</item>
+        <item>SAN LUIS</item>
+        <item>SAN LUIS</item>
+        <item>SAN MARTIN DE PORRES</item>
+        <item>SAN MATEO DE OTAO</item>
+        <item>SAN MATEO</item>
+        <item>SAN MIGUEL DE ACOS</item>
+        <item>SAN MIGUEL</item>
+        <item>SAN PEDRO DE CASTA</item>
+        <item>SAN PEDRO DE HUANCAYRE</item>
+        <item>SAN PEDRO DE PILAS</item>
+        <item>SAN VICENTE DE CAÑETE</item>
+        <item>SANGALLAYA</item>
+        <item>SANTA ANITA</item>
+        <item>SANTA CRUZ DE ANDAMARCA</item>
+        <item>SANTA CRUZ DE COCACHACRA</item>
+        <item>SANTA CRUZ DE FLORES</item>
+        <item>SANTA EULALIA</item>
+        <item>SANTA LEONOR</item>
+        <item>SANTA MARÍA DEL MAR</item>
+        <item>SANTA MARÍA</item>
+        <item>SANTA ROSA DE QUIVES</item>
+        <item>SANTA ROSA</item>
+        <item>SANTIAGO DE ANCHUCAYA</item>
+        <item>SANTIAGO DE SURCO</item>
+        <item>SANTIAGO DE TUNA</item>
+        <item>SANTO DOMINGO DE LOS OLLEROS</item>
+        <item>SAYÁN</item>
+        <item>SUMBILCA</item>
+        <item>SUPE PUERTO</item>
+        <item>SUPE</item>
+        <item>SURCO</item>
+        <item>SURQUILLO</item>
+        <item>TANTA</item>
+        <item>TAURIPAMPA</item>
+        <item>TOMAS</item>
+        <item>TUPE</item>
+        <item>VÉGUETA</item>
+        <item>VEINTISIETE DE NOVIEMBRE</item>
+        <item>VILLA EL SALVADOR</item>
+        <item>VILLA MARIA DEL TRIUNFO</item>
+        <item>VIÑAC</item>
+        <item>VITIS</item>
+        <item>YAUYOS</item>
+        <item>ZUÑIGA</item>
+
+
+
+
+
+    </string-array>
+    <string-array name="Genero">
+        <item>NO SELECCIONADO</item>
+        <item>CUMBIA</item>
+        <item>SALSA</item>
+        <item>ROCK</item>
+        <item>POP</item>
+        <item>BACHATA</item>
+        <item>HUAYNO</item>
+        <item>HUAYLAS</item>
+        <item>ALTERNATIVO</item>
+    </string-array>
+</resources>

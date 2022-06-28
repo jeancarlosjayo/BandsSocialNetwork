@@ -329,41 +329,12 @@
 
             </com.google.android.material.textfield.TextInputEditText>
 
-            <TextView
-                android:id="@+id/info11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/edtEdad"
-                android:layout_marginTop="10dp"
-                android:justificationMode="inter_word"
-                android:text="Departamento"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textStyle="bold">
-
-            </TextView>
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edtDepartamento"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/info11"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/ic_strokeorange"
-                android:hint="Departamento de residencia"
-                android:inputType="textCapCharacters"
-                android:maxLines="1"
-                android:padding="10dp"
-                android:paddingStart="20dp">
-
-
-            </com.google.android.material.textfield.TextInputEditText>
 
             <TextView
                 android:id="@+id/info12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/edtDepartamento"
+                android:layout_below="@id/edtEdad"
                 android:layout_marginTop="10dp"
                 android:justificationMode="inter_word"
                 android:text="Distrito"
@@ -373,13 +344,13 @@
 
             </TextView>
 
-            <com.google.android.material.textfield.TextInputEditText
+            <Spinner
                 android:id="@+id/edtDistrito"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/info12"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/ic_strokeorange"
+                android:backgroundTint="@color/orange"
                 android:hint="Distrito de residencia"
                 android:inputType="textCapCharacters"
                 android:maxLines="1"
@@ -387,7 +358,7 @@
                 android:paddingStart="20dp">
 
 
-            </com.google.android.material.textfield.TextInputEditText>
+            </Spinner>
 
             <TextView
                 android:id="@+id/info13"

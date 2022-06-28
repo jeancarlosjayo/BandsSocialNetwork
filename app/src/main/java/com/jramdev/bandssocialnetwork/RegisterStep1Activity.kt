@@ -7,10 +7,7 @@ import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
@@ -36,8 +33,7 @@ class RegisterStep1Activity : AppCompatActivity() {
     private lateinit var email: TextInputEditText
     private lateinit var telefono: TextInputEditText
     private lateinit var empresa: TextInputEditText
-    private lateinit var departamento: TextInputEditText
-    private lateinit var distrito: TextInputEditText
+    private lateinit var distrito: Spinner
     private lateinit var edad: TextInputEditText
     private lateinit var contrasena: TextInputEditText
     private lateinit var contrasena2: TextInputEditText
@@ -69,12 +65,17 @@ class RegisterStep1Activity : AppCompatActivity() {
         email = findViewById(R.id.edtEmail)
         telefono = findViewById(R.id.edtTelefono)
         empresa = findViewById(R.id.edtNombreEmpresa)
-        departamento = findViewById(R.id.edtDepartamento)
         distrito = findViewById(R.id.edtDistrito)
         edad = findViewById(R.id.edtEdad)
         contrasena = findViewById(R.id.edtContraseña)
         contrasena2 = findViewById(R.id.edtContraseña2)
         btnregistrar = findViewById(R.id.btnRegistrar)
+        val adapter1 = ArrayAdapter.createFromResource(
+            this,
+            R.array.Opciones,
+            androidx.appcompat.R.layout.support_simple_spinner_dropdown_item
+        )
+        distrito.adapter = adapter1
         auth = Firebase.auth
         layout1 = LayoutInflater.from(this).inflate(
             R.layout.custom_toast,
@@ -136,8 +137,7 @@ class RegisterStep1Activity : AppCompatActivity() {
             val textEmail: String = email.text.toString().trim()
             val textTelefono: String = telefono.text.toString().trim()
             val textEmpresa: String = empresa.text.toString().trim()
-            val textDepartamento: String = departamento.text.toString().trim()
-            val textDistrito: String = distrito.text.toString().trim()
+            val textDistrito: String = distrito.selectedItem.toString()
             val textEdad: String = edad.text.toString().trim()
             val textContrasena: String = contrasena.text.toString().trim()
             val textContrasena2: String = contrasena2.text.toString().trim()
@@ -145,7 +145,7 @@ class RegisterStep1Activity : AppCompatActivity() {
                 "banda" ->
                     if (textRuc.isNotEmpty()
                         && textNombreBanda.isNotEmpty() && textNombreManager.isNotEmpty() && textEmail.isNotEmpty()
-                        && textTelefono.isNotEmpty() && textContrasena.isNotEmpty() && textDepartamento.isNotEmpty() &&
+                        && textTelefono.isNotEmpty() && textContrasena.isNotEmpty() &&
                         textDistrito.isNotEmpty() && textContrasena2.isNotEmpty()
                     ) {
                         if (validateRuc(textRuc)) {
@@ -172,7 +172,6 @@ class RegisterStep1Activity : AppCompatActivity() {
                                                     hashMap3["namemanager"] = "" + textNombreManager
                                                     hashMap3["email"] = "" + textEmail
                                                     hashMap3["phone"] = "" + textTelefono
-                                                    hashMap3["department"] = "" + textDepartamento
                                                     hashMap3["district"] = "" + textDistrito
                                                     hashMap3["typeuser"] = "banda"
                                                     if (user != null) {
@@ -206,7 +205,7 @@ class RegisterStep1Activity : AppCompatActivity() {
                         customToastVisualizer("Los campos no pueden estar vacios.")
                     }
                 "promotor" -> if (textRuc.isNotEmpty() && textDni.isNotEmpty() && textNombreCompleto.isNotEmpty()
-                    && textEmail.isNotEmpty() && textTelefono.isNotEmpty() && textEmpresa.isNotEmpty() && textDepartamento.isNotEmpty() &&
+                    && textEmail.isNotEmpty() && textTelefono.isNotEmpty() && textEmpresa.isNotEmpty() &&
                     textDistrito.isNotEmpty() && textEdad.isNotEmpty()
                 ) {
                     if (validateRuc(textRuc)) {
@@ -236,8 +235,6 @@ class RegisterStep1Activity : AppCompatActivity() {
                                                             "" + textNombreCompleto
                                                         hashMap3["email"] = "" + textEmail
                                                         hashMap3["phone"] = "" + textTelefono
-                                                        hashMap3["department"] =
-                                                            "" + textDepartamento
                                                         hashMap3["district"] = "" + textDistrito
                                                         hashMap3["age"] = "" + textEdad
                                                         hashMap3["enterprise"] = "" + textEmpresa
@@ -282,7 +279,7 @@ class RegisterStep1Activity : AppCompatActivity() {
                     customToastVisualizer("Los campos no pueden estar vacios.")
                 }
                 "cliente" -> if (textDni.isNotEmpty() && textNombreCompleto.isNotEmpty()
-                    && textEmail.isNotEmpty() && textTelefono.isNotEmpty() && textDepartamento.isNotEmpty() &&
+                    && textEmail.isNotEmpty() && textTelefono.isNotEmpty() &&
                     textDistrito.isNotEmpty() && textEdad.isNotEmpty()
                 ) {
                     if (textDni.length == 8) {
@@ -310,8 +307,6 @@ class RegisterStep1Activity : AppCompatActivity() {
                                                         "" + textNombreCompleto
                                                     hashMap3["email"] = "" + textEmail
                                                     hashMap3["phone"] = "" + textTelefono
-                                                    hashMap3["department"] =
-                                                        "" + textDepartamento
                                                     hashMap3["district"] = "" + textDistrito
                                                     hashMap3["age"] = "" + textEdad
                                                     hashMap3["typeuser"] = "cliente"
