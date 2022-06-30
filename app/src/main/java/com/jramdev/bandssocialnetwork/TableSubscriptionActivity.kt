@@ -73,7 +73,7 @@ class TableSubscriptionActivity : AppCompatActivity() {
             if (option1.isChecked || option2.isChecked || option3.isChecked) {
                 val intent = Intent(
                     this,
-                    RegisterStep1Activity::class.java
+                    PasarelaActivtiy::class.java
                 )
                 startActivity(intent)
                 finish()

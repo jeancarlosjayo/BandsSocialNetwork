@@ -3,6 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_pasarela.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_register_step1.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_register_step2.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_table_subscription.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_tablero.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_user_selection.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/custom_layout.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/custom_toast.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/fragment_calendar.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/fragment_search.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/row.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/menu/menu.xml" value="0.25" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/drawable/ic_bandapelogo.xml" value="0.1" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/drawable/ic_mensualoption.xml" value="0.1675" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/drawable/ic_strokeorange.xml" value="0.149" />

@@ -36,6 +36,9 @@
             android:name=".UserSelectionActivity"
             android:exported="false" />
         <activity
+            android:name=".PasarelaActivtiy"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false"
             android:theme="@style/SinToolbar">

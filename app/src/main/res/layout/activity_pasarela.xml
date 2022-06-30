@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:contentDescription="TODO"
+        android:gravity="center_horizontal"
+        android:minWidth="200dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/pasarela" />
+
+
+    <ImageView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="120dp"
+        android:contentDescription="TODO"
+        android:gravity="center_horizontal"
+        android:minWidth="200dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/userEditText"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="59dp"
+        android:background="@drawable/ic_strokeorange"
+        android:drawableTint="#4D000000"
+        android:hint="Tarjeta"
+        android:inputType="numberDecimal"
+        android:maxLength="16"
+        android:maxLines="1"
+        android:paddingStart="30dp"
+        android:paddingEnd="13dp"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/fechaEditText"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userEditText"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/ic_strokeorange"
+        android:drawableTint="#4D000000"
+        android:hint="Fec. Exp."
+        android:inputType="date"
+        android:maxLength="7"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="13dp"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/cvvEditText"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="59dp"
+        android:maxLength="4"
+        android:background="@drawable/ic_strokeorange"
+        android:drawableTint="#4D000000"
+        android:hint="CVV"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="13dp"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/nombreEditText"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="286dp"
+        android:layout_marginEnd="59dp"
+        android:background="@drawable/ic_strokeorange"
+        android:drawableTint="#4D000000"
+        android:maxLength="40"
+        android:hint="Nombre y Apellido"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="13dp"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/correoEditText"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="59dp"
+        android:maxLength="40"
+        android:background="@drawable/ic_strokeorange"
+        android:drawableTint="#4D000000"
+        android:hint="Correo"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="13dp"
+        android:textColorHint="#757575" />
+
+    <ImageButton
+        android:id="@+id/btnPagar"
+        android:layout_width="137dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/correoEditText"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/pagar"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </ImageButton>
+
+
+</RelativeLayout>
