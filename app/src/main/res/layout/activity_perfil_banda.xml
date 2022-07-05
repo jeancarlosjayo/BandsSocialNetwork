@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddPublicationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
+            android:backgroundTint="@color/black" />
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="156dp"
+            android:layout_height="104dp"
+            android:layout_below="@id/backbtn"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="226dp"
+            android:background="@drawable/perfil_banda"
+            android:scaleType="fitStart">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/pImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="198dp"
+            android:src="@drawable/ic_baseline_image_24">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/namePCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Nombre"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/edadPCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="RUC"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/phonePCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Distrito"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/distritPCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Celular"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/edtPublicaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Calendario de eventos"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <ImageView
+            android:id="@+id/logo_caledar"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginEnd="198dp"
+            android:src="@drawable/calendario_logo">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/rangoFechas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Rango de fecha"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/verMas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Ver más"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/Discorafía"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="440dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Discografía"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <ImageView
+            android:id="@+id/log_discografia"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginEnd="198dp"
+            android:src="@drawable/discografia_logo">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tituloDisco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Título de discografía"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/verMas2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="510dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Ver más"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/edtPublicacion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="600dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Título de la publicación: "
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/pImagePublicacion2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="570dp"
+            android:layout_marginEnd="198dp"
+            android:src="@drawable/ic_baseline_image_24">
+
+        </ImageView>
+
+
+        <ImageView
+            android:id="@+id/editar"
+            android:layout_width="76dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="680dp"
+            android:src="@drawable/edit_perfil">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/mensaje"
+            android:layout_width="92dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="680dp"
+            android:src="@drawable/mensaje_perfil">
+
+        </ImageView>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+

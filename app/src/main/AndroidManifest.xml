@@ -41,6 +41,9 @@
             android:name=".PasarelaActivtiy"
             android:exported="false" />
         <activity
+            android:name=".AddEvent"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false"
             android:theme="@style/SinToolbar"></activity>
