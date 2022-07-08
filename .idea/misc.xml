@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/drawable/ic_step3.xml" value="0.236" />
         <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_add_evento.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_add_publication.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_editar_banda.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_editar_cliente.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_editar_promotor.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_lista_chats.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/99100229/StudioProjects/BandsSocialNetwork/app/src/main/res/layout/activity_pasarela.xml" value="0.22826086956521738" />

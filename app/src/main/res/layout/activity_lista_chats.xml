@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddPublicationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
+            android:backgroundTint="@color/black" />
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="184dp"
+            android:layout_height="106dp"
+            android:layout_below="@id/backbtn"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="198dp"
+            android:background="@drawable/lista_chats"
+            android:scaleType="fitStart">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/pImage"
+            android:layout_width="67dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="198dp"
+            android:src="@drawable/ic_baseline_image_24">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/namePCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Nombre"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/phonePCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="260dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Mensaje ........................"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="07/07/2022"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <ImageView
+            android:id="@+id/pImage2"
+            android:layout_width="67dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginEnd="198dp"
+            android:src="@drawable/ic_baseline_image_24">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/namePCliente2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Nombre"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/phonePCliente2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Mensaje ........................"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/fecha2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="05/07/2022"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <ImageView
+            android:id="@+id/pImage3"
+            android:layout_width="67dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="198dp"
+            android:src="@drawable/ic_baseline_image_24">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/namePCliente3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="410dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Nombre"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/phonePCliente3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="440dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="Mensaje ........................"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/fecha3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="430dp"
+            android:layout_marginEnd="20dp"
+            android:justificationMode="inter_word"
+            android:text="05/07/2022"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancelar"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/nuevo_msg"
+            android:drawableTint="@color/white"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+
