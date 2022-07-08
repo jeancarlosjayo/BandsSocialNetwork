@@ -1,7 +1,6 @@
 package com.jramdev.bandssocialnetwork;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.text.format.DateFormat;
 import android.view.LayoutInflater;
@@ -18,6 +17,11 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
 import java.util.Calendar;
@@ -68,9 +72,9 @@ public class AdapterPosts extends RecyclerView.Adapter<AdapterPosts.MyHolder> {
         myHolder.pDistrictTV.setText(pdistrict);
         //set user up
         try {
-            Picasso.get().load(uImage).placeholder(R.drawable.ic_baseline_image_24).into(myHolder.uPictureIv);
+            Picasso.get().load(uImage).placeholder(R.drawable.ic_baseline_account_circle_24).into(myHolder.uPictureIv);
         } catch (Exception ex) {
-
+            Picasso.get().load(R.drawable.ic_baseline_account_circle_24).into(myHolder.uPictureIv);
         }
 
 //set post image
@@ -81,7 +85,7 @@ public class AdapterPosts extends RecyclerView.Adapter<AdapterPosts.MyHolder> {
             try {
                 Picasso.get().load(pImage).into(myHolder.pImageIv);
             } catch (Exception ex) {
-
+                Picasso.get().load(R.drawable.ic_baseline_image_24).into(myHolder.pImageIv);
             }
         }
         if (uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
@@ -92,10 +96,48 @@ public class AdapterPosts extends RecyclerView.Adapter<AdapterPosts.MyHolder> {
         myHolder.moreBtn.setOnClickListener(v -> showDialog(i, pId));
         myHolder.likeBtn.setOnClickListener(v -> Toast.makeText(context, "Me gusta", Toast.LENGTH_SHORT).show());
         myHolder.commentBtn.setOnClickListener(v -> Toast.makeText(context, "Comenta", Toast.LENGTH_SHORT).show());
-        myHolder.profileLayout.setOnClickListener(v -> {
-            // Intent intent=new Intent(context, OtroPerfilActivity.class);
-            // intent.putExtra("uid",uid);
-            // context.startActivity(intent);
+        myHolder.uPictureIv.setOnClickListener(v -> {
+            if (uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
+                Toast.makeText(context, FirebaseAuth.getInstance().getCurrentUser().getEmail(), Toast.LENGTH_SHORT).show();
+            } else {
+                Query query = FirebaseDatabase.getInstance().getReference("users").orderByKey().equalTo(uid);
+                query.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        query.removeEventListener(this);
+                        for (DataSnapshot ds : snapshot.getChildren()) {
+                            String type = "" + ds.child("typeuser").getValue().toString();
+                            switch (type) {
+                                case "cliente":
+                                    Intent intent = new Intent(context, AnotherProfileClienteActivity.class);
+                                    intent.putExtra("SuUID", uid);
+                                    context.startActivity(intent);
+                                    break;
+                                case "promotor":
+                                    Intent intent1 = new Intent(context, AnotherProfilePromotorActivity.class);
+                                    intent1.putExtra("SuUID", uid);
+                                    context.startActivity(intent1);
+                                    break;
+                                case "banda":
+                                    Intent intent2 = new Intent(context, AnotherProfileBandaActivity.class);
+                                    intent2.putExtra("SuUID", uid);
+                                    context.startActivity(intent2);
+                                    break;
+                                default:
+                                    Toast.makeText(context, "No se ha podido encontrar el perfil o la publicacion se ha eliminado.", Toast.LENGTH_SHORT).show();
+                            }
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+                        query.removeEventListener(this);
+                    }
+                });
+            }
+
 
         });
 
@@ -107,24 +149,21 @@ public class AdapterPosts extends RecyclerView.Adapter<AdapterPosts.MyHolder> {
         //dialog
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle("Opciones: ");
-        builder.setItems(options, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                if (which == 0) {//camera click
-                    Intent intent = new Intent(context, UpdatePublicationActivity.class);
-                    intent.putExtra("IdPost", pId);
-                    context.startActivity(intent);
+        builder.setItems(options, (dialog, which) -> {
+            if (which == 0) {//camera click
+                Intent intent = new Intent(context, UpdatePublicationActivity.class);
+                intent.putExtra("IdPost", pId);
+                context.startActivity(intent);
 
-                }
-                if (which == 1) {
-                    postList.remove(i);
-                    Toast.makeText(
-                            context,
-                            "Opcion eliminar",
-                            Toast.LENGTH_SHORT
-                    ).show();
+            }
+            if (which == 1) {
+                postList.remove(i);
+                Toast.makeText(
+                        context,
+                        "Opcion eliminar",
+                        Toast.LENGTH_SHORT
+                ).show();
 
-                }
             }
         });
         //crear y mirar dialog

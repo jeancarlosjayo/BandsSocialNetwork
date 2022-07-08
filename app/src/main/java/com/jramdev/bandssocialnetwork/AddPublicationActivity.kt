@@ -80,7 +80,7 @@ class AddPublicationActivity : AppCompatActivity() {
                     }
                     if (type == "cliente") {
                         query.removeEventListener(this)
-                        nombre = "" + ds.child("name").value
+                        nombre = "" + ds.child("fullname").value
                         email = "" + ds.child("email").value
                         imagen = "" + ds.child("image").value
                         distrito = "" + ds.child("district").value

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnotherProfilePromotorActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
+                android:backgroundTint="@color/black" />
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="184dp"
+                android:layout_height="106dp"
+                android:layout_below="@id/backbtn"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="198dp"
+                android:background="@drawable/perfil_promotor"
+                android:scaleType="fitStart">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/pImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="240dp"
+                android:layout_marginEnd="198dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_image_24">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/namePCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="Nombre"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/phonePCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/namePCliente"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:justificationMode="inter_word"
+                android:text="RUC"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/postsRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pImage"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="110dp"
+                tools:itemCount="2"
+                tools:listitem="@layout/row">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/edit_perfil">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/mensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/mensaje_perfil">
+
+        </ImageView>
+
+    </LinearLayout>
+</RelativeLayout>

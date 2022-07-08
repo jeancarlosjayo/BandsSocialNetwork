@@ -174,6 +174,8 @@ class RegisterStep1Activity : AppCompatActivity() {
                                                     hashMap3["phone"] = "" + textTelefono
                                                     hashMap3["district"] = "" + textDistrito
                                                     hashMap3["typeuser"] = "banda"
+                                                    hashMap3["onlineStatus"] = "online"
+                                                    hashMap3["profilepic"] = ""
                                                     if (user != null) {
                                                         registerUser(hashMap3, user)
                                                     }
@@ -239,6 +241,8 @@ class RegisterStep1Activity : AppCompatActivity() {
                                                         hashMap3["age"] = "" + textEdad
                                                         hashMap3["enterprise"] = "" + textEmpresa
                                                         hashMap3["typeuser"] = "promotor"
+                                                        hashMap3["onlineStatus"] = "online"
+                                                        hashMap3["profilepic"] = ""
                                                         if (user != null) {
                                                             registerUser(hashMap3, user)
                                                         }
@@ -310,6 +314,8 @@ class RegisterStep1Activity : AppCompatActivity() {
                                                     hashMap3["district"] = "" + textDistrito
                                                     hashMap3["age"] = "" + textEdad
                                                     hashMap3["typeuser"] = "cliente"
+                                                    hashMap3["onlineStatus"] = "online"
+                                                    hashMap3["profilepic"] = ""
                                                     if (user != null) {
                                                         registerUser(hashMap3, user)
                                                     }

@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var linearLayout2: LinearLayout
     private lateinit var addPostButton: ImageButton
     private lateinit var builder: AlertDialog.Builder
+    var typeprofile: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -122,15 +123,41 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.idProfile -> {
                     //home fragment transaction
-                    val fragment1 =
-                        ProfileFragment()
-                    val ft1 = supportFragmentManager.beginTransaction().setCustomAnimations(
-                        R.anim.slide_in,
-                        R.anim.fade_out,
-                    )
-                    ft1.replace(R.id.content, fragment1, "")
-                    ft1.commit()
-                    return@OnItemSelectedListener true
+                    if (typeprofile == "banda") {
+                        val fragment1 =
+                            ProfileBandaFragment()
+                        val ft1 = supportFragmentManager.beginTransaction().setCustomAnimations(
+                            R.anim.slide_in,
+                            R.anim.fade_out,
+                        )
+                        ft1.replace(R.id.content, fragment1, "")
+                        ft1.commit()
+                        return@OnItemSelectedListener true
+                    }
+                    if (typeprofile == "promotor") {
+                        val fragment1 =
+                            ProfilePromotorFragment()
+                        val ft1 = supportFragmentManager.beginTransaction().setCustomAnimations(
+                            R.anim.slide_in,
+                            R.anim.fade_out,
+                        )
+                        ft1.replace(R.id.content, fragment1, "")
+                        ft1.commit()
+                        return@OnItemSelectedListener true
+                    }
+                    if (typeprofile == "cliente") {
+                        val fragment1 =
+                            ProfileClienteFragment()
+                        val ft1 = supportFragmentManager.beginTransaction().setCustomAnimations(
+                            R.anim.slide_in,
+                            R.anim.fade_out,
+                        )
+                        ft1.replace(R.id.content, fragment1, "")
+                        ft1.commit()
+                        return@OnItemSelectedListener true
+                    }
+
+
                 }
 
 
@@ -148,6 +175,7 @@ class MainActivity : AppCompatActivity() {
                 for (ds in snapshot.children) {
                     //get data
                     val type = "" + ds.child("typeuser").value
+                    typeprofile = type
                     if (type == "banda") {
                         query.removeEventListener(this)
                         menuBar.getItem(3).isVisible = false
@@ -187,5 +215,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onStart() {
+        super.onStart()
+        updateUI(FirebaseAuth.getInstance().currentUser)
+    }
 
 }

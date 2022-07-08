@@ -20,6 +20,21 @@
         android:supportsRtl="true"
         android:theme="@style/SinToolbar">
         <activity
+            android:name=".AnotherProfilePromotorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnotherProfileBandaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnotherProfileClienteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileClienteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePromotorActivity"
+            android:exported="false" />
+        <activity
             android:name=".UpdatePublicationActivity"
             android:exported="false" />
         <activity
@@ -46,7 +61,11 @@
         <activity
             android:name=".LoginActivity"
             android:exported="false"
-            android:theme="@style/SinToolbar"></activity>
+            android:theme="@style/SinToolbar" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false"
+            android:theme="@style/SinToolbar" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
