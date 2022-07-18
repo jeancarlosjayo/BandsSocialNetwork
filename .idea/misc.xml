@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/drawable/bg_receiver.xml" value="0.127" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/drawable/bg_sender.xml" value="0.127" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/drawable/circle_offline.xml" value="0.1275" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/drawable/circle_online.xml" value="0.1275" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/drawable/ic_bandapelogo.xml" value="0.1" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/drawable/ic_mensualoption.xml" value="0.1675" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/drawable/ic_strokeorange.xml" value="0.149" />
@@ -47,6 +49,7 @@
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/layout/row.xml" value="0.22" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/layout/row_chat_left.xml" value="0.25" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/layout/row_chat_right.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/layout/row_chatlist.xml" value="0.22" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/layout/row_users.xml" value="0.16417272338606242" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/BandsSocialNetwork/app/src/main/res/menu/menu.xml" value="0.1641025641025641" />
       </map>

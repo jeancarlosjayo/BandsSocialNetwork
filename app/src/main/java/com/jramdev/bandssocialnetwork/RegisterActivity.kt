@@ -20,7 +20,7 @@ import com.google.firebase.ktx.Firebase
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
-class RegisterStep1Activity : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity() {
     private lateinit var backButton: ImageButton
     private lateinit var builder: AlertDialog.Builder
     private lateinit var textstepper1: ImageView
@@ -167,6 +167,9 @@ class RegisterStep1Activity : AppCompatActivity() {
                                                     // Sign in success, update UI with the signed-in user's information
                                                     val user = auth.currentUser
                                                     val hashMap3 = HashMap<Any, String>()
+                                                    if (user != null) {
+                                                        hashMap3["uid"] = "" + user.uid
+                                                    }
                                                     hashMap3["ruc"] = "" + textRuc
                                                     hashMap3["nameband"] = "" + textNombreBanda
                                                     hashMap3["namemanager"] = "" + textNombreManager
@@ -231,6 +234,9 @@ class RegisterStep1Activity : AppCompatActivity() {
                                                         // Sign in success, update UI with the signed-in user's information
                                                         val user = auth.currentUser
                                                         val hashMap3 = HashMap<Any, String>()
+                                                        if (user != null) {
+                                                            hashMap3["uid"] = "" + user.uid
+                                                        }
                                                         hashMap3["ruc"] = "" + textRuc
                                                         hashMap3["dni"] = "" + textDni
                                                         hashMap3["fullname"] =
@@ -306,6 +312,9 @@ class RegisterStep1Activity : AppCompatActivity() {
                                                     // Sign in success, update UI with the signed-in user's information
                                                     val user = auth.currentUser
                                                     val hashMap3 = HashMap<Any, String>()
+                                                    if (user != null) {
+                                                        hashMap3["uid"] = "" + user.uid
+                                                    }
                                                     hashMap3["dni"] = "" + textDni
                                                     hashMap3["fullname"] =
                                                         "" + textNombreCompleto

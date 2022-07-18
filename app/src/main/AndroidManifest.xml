@@ -44,7 +44,7 @@
             android:name=".RegisterStep2Activity"
             android:exported="false" />
         <activity
-            android:name=".RegisterStep1Activity"
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".TableSubscriptionActivity"

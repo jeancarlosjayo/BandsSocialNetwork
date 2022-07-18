@@ -30,7 +30,7 @@ class UserSelectionActivity : AppCompatActivity() {
             setTypeofUser("banda")
             val intent = Intent(
                 this,
-                RegisterStep1Activity::class.java
+                RegisterActivity::class.java
             )
             startActivity(intent)
             finish()
@@ -48,7 +48,7 @@ class UserSelectionActivity : AppCompatActivity() {
             setTypeofUser("cliente")
             val intent = Intent(
                 this,
-                RegisterStep1Activity::class.java
+                RegisterActivity::class.java
             )
             startActivity(intent)
             finish()

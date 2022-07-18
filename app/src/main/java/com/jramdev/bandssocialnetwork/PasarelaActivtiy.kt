@@ -175,7 +175,7 @@ class PasarelaActivtiy: AppCompatActivity() {
 
     private fun updateUI() {
 
-        val intent = Intent(this, RegisterStep1Activity::class.java)
+        val intent = Intent(this, RegisterActivity::class.java)
         val text = "Pago exitosa"
         loadingDialog.dismissLoadingAlertDialog()
         customToastVisualizer(text)

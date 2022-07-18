@@ -64,7 +64,7 @@ class TableSubscriptionActivity : AppCompatActivity() {
         optionfree.setOnClickListener {
             val intent = Intent(
                 this,
-                RegisterStep1Activity::class.java
+                RegisterActivity::class.java
             )
             startActivity(intent)
             finish()
