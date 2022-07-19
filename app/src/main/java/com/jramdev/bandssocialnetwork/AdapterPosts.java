@@ -67,7 +67,6 @@ public class AdapterPosts extends RecyclerView.Adapter<AdapterPosts.MyHolder> {
         String pTimeStamp = postList.get(i).getpTime();
         String pdistrict = postList.get(i).getpDistrict();
         //convert timestamp
-        inittask(myHolder, pId);
         Calendar calendar = Calendar.getInstance(Locale.getDefault());
         calendar.setTimeInMillis(Long.parseLong(pTimeStamp));
         String pTime = DateFormat.format("dd/MM/yyyy hh:mm aa", calendar).toString();
@@ -102,7 +101,7 @@ public class AdapterPosts extends RecyclerView.Adapter<AdapterPosts.MyHolder> {
         }
 
         myHolder.moreBtn.setOnClickListener(v -> showDialog(i, pId));
-        myHolder.likeBtn.setOnClickListener(v -> likeProccess(i, myHolder, pId));
+        myHolder.likeBtn.setOnClickListener(v -> Toast.makeText(context, "Me gusta", Toast.LENGTH_SHORT).show());
         myHolder.commentBtn.setOnClickListener(v -> Toast.makeText(context, "Comenta", Toast.LENGTH_SHORT).show());
         myHolder.uPictureIv.setOnClickListener(v -> {
             if (uid.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
@@ -158,7 +157,7 @@ public class AdapterPosts extends RecyclerView.Adapter<AdapterPosts.MyHolder> {
             @Override
             public void run() {
                 // your code
-                taskLikeTextRefresh(myHolder, pId);
+                //taskLikeTextRefresh(myHolder, pId);
             }
         };
 
